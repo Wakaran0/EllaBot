@@ -1,0 +1,9 @@
+# This file contains all the instructions and their linked actions of EllaBot
+# The order of the actions is the order of their execution
+
+about show_about_ella
+help show_about_ella show_help
+
+avatar get_avatars
+
+# End of the file (always leave this line)
