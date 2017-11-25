@@ -48,3 +48,31 @@ def get_instructions():
     instructions_file.close()
 
     return instructions
+
+
+def get_corresponding_instructions(word, instructions):
+    """  Returns a list of corresponding instructions to the given word
+
+    Parameters
+    ----------
+    word: Word which can correspond with an instruction (str)
+    instructions: The list of all the instructions of the bot (List)
+
+    Returns
+    -------
+    corresponding_instructions: The list of the corresponding instructions (List)
+    """
+
+    # Create the list which is going to stock the corresponding instructions
+    corresponding_instructions = []
+
+    # Add the corresponding instructions to the list which is going to be returned
+
+    for instruction in instructions:
+
+        if instruction['instruction'].startswith(word):
+            corresponding_instructions.append(instruction)
+
+    # Finally return the corresponding instructions
+    return corresponding_instructions
+
